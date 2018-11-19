@@ -12,33 +12,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="/**
-
-常用工具类
-Author:hejian
-Date:2018-3-1*/
-
-(function() {  var Jen = Jen || {};  Jen.areas = window.JEN_AREAS || {}  // 判断类型  Jen.TypeJudge = {    isString: function(o) { //是否为字符串      return Object.pro">
+    <meta name="description" content="转载自（https://www.cnblogs.com/dirkhe/p/8494814.html）(function() {  var Jen = Jen || {};  Jen.areas = window.JEN_AREAS || {}  // 判断类型  Jen.TypeJudge = {    isString: function(o) { //是否为字符串      return Ob">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="常用工具 | hopeLwj">
-    <meta name="twitter:description" content="/**
-
-常用工具类
-Author:hejian
-Date:2018-3-1*/
-
-(function() {  var Jen = Jen || {};  Jen.areas = window.JEN_AREAS || {}  // 判断类型  Jen.TypeJudge = {    isString: function(o) { //是否为字符串      return Object.pro">
+    <meta name="twitter:description" content="转载自（https://www.cnblogs.com/dirkhe/p/8494814.html）(function() {  var Jen = Jen || {};  Jen.areas = window.JEN_AREAS || {}  // 判断类型  Jen.TypeJudge = {    isString: function(o) { //是否为字符串      return Ob">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="常用工具 | hopeLwj">
-    <meta property="og:description" content="/**
-
-常用工具类
-Author:hejian
-Date:2018-3-1*/
-
-(function() {  var Jen = Jen || {};  Jen.areas = window.JEN_AREAS || {}  // 判断类型  Jen.TypeJudge = {    isString: function(o) { //是否为字符串      return Object.pro">
+    <meta property="og:description" content="转载自（https://www.cnblogs.com/dirkhe/p/8494814.html）(function() {  var Jen = Jen || {};  Jen.areas = window.JEN_AREAS || {}  // 判断类型  Jen.TypeJudge = {    isString: function(o) { //是否为字符串      return Ob">
 
     
     <meta name="author" content="lwj">
@@ -160,13 +142,7 @@ Date:2018-3-1*/
   </header>
 
   <section class="post">
-    <p>/**</p>
-<ul>
-<li>常用工具类</li>
-<li>Author:hejian</li>
-<li>Date:2018-3-1<br>*/</li>
-</ul>
-<p>(function() {<br>  var Jen = Jen || {};<br>  Jen.areas = window.JEN_AREAS || {}<br>  // 判断类型<br>  Jen.TypeJudge = {<br>    isString: function(o) { //是否为字符串<br>      return Object.prototype.toString.call(o).slice(8, -1) === “String”<br>    },<br>    isNumber: function(o) { //是否为数字<br>      return Object.prototype.toString.call(o).slice(8, -1) === “Number”<br>    },<br>    isObj: function(o) { //是否为对象<br>      return Object.prototype.toString.call(o).slice(8, -1) === “Object”<br>    },<br>    isArray(o) { //是否数组<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Array’<br>    },<br>    isDate(o) { //是否时间<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Date’<br>    },<br>    isBoolean(o) { //是否boolean<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Boolean’<br>    },<br>    isFunction(o) { //是否函数<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Function’<br>    },<br>    isNull(o) { //是否为null<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Null’<br>    },<br>    isUndefined(o) { //是否undefined<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Undefined’<br>    },<br>    isFalse(o) {<br>      if (!o || o === ‘null’ || o === ‘undefined’ || o === ‘false’ || o === ‘NaN’)<br>        return true<br>    },<br>    isTrue(o) {<br>      return !this.isFalse(o)<br>    }<br>  }<br>  // 判断浏览器类型<br>  Jen.browserType = function() {<br>    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串<br>    var isOpera = userAgent.indexOf(“Opera”) &gt; -1; //判断是否Opera浏览器<br>    var isIE = userAgent.indexOf(“compatible”) &gt; -1 &amp;&amp; userAgent.indexOf(“MSIE”) &gt; -1 &amp;&amp; !isOpera; //判断是否IE浏览器<br>    var isEdge = userAgent.indexOf(“Edge”) &gt; -1; //判断是否IE的Edge浏览器<br>    var isFF = userAgent.indexOf(“Firefox”) &gt; -1; //判断是否Firefox浏览器<br>    var isSafari = userAgent.indexOf(“Safari”) &gt; -1 &amp;&amp; userAgent.indexOf(‘Chrome’) == -1 //判断是否Safari浏览器<br>    var isChrome = userAgent.indexOf(“CriOS”) &gt; -1 &amp;&amp; userAgent.indexOf(‘Safari’) &gt; -1 //判断Chrome浏览器<br>    if (isIE) {<br>      var reIE = new RegExp(“MSIE (\d+\.\d+);”);<br>      reIE.test(userAgent);<br>      var fIEVersion = parseFloat(RegExp[“$1”]);<br>      if (fIEVersion == 7)<br>        return “IE7”<br>      else if (fIEVersion == 8)<br>        return “IE8”;<br>      else if (fIEVersion == 9)<br>        return “IE9”;<br>      else if (fIEVersion == 10)<br>        return “IE10”;<br>      else if (fIEVersion == 11)<br>        return “IE11”;<br>      else<br>        return “IE7以下” //IE版本过低<br>      }</p>
+    <p>转载自（<a href="https://www.cnblogs.com/dirkhe/p/8494814.html）" target="_blank" rel="noopener">https://www.cnblogs.com/dirkhe/p/8494814.html）</a><br>(function() {<br>  var Jen = Jen || {};<br>  Jen.areas = window.JEN_AREAS || {}<br>  // 判断类型<br>  Jen.TypeJudge = {<br>    isString: function(o) { //是否为字符串<br>      return Object.prototype.toString.call(o).slice(8, -1) === “String”<br>    },<br>    isNumber: function(o) { //是否为数字<br>      return Object.prototype.toString.call(o).slice(8, -1) === “Number”<br>    },<br>    isObj: function(o) { //是否为对象<br>      return Object.prototype.toString.call(o).slice(8, -1) === “Object”<br>    },<br>    isArray(o) { //是否数组<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Array’<br>    },<br>    isDate(o) { //是否时间<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Date’<br>    },<br>    isBoolean(o) { //是否boolean<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Boolean’<br>    },<br>    isFunction(o) { //是否函数<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Function’<br>    },<br>    isNull(o) { //是否为null<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Null’<br>    },<br>    isUndefined(o) { //是否undefined<br>      return Object.prototype.toString.call(o).slice(8, -1) === ‘Undefined’<br>    },<br>    isFalse(o) {<br>      if (!o || o === ‘null’ || o === ‘undefined’ || o === ‘false’ || o === ‘NaN’)<br>        return true<br>    },<br>    isTrue(o) {<br>      return !this.isFalse(o)<br>    }<br>  }<br>  // 判断浏览器类型<br>  Jen.browserType = function() {<br>    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串<br>    var isOpera = userAgent.indexOf(“Opera”) &gt; -1; //判断是否Opera浏览器<br>    var isIE = userAgent.indexOf(“compatible”) &gt; -1 &amp;&amp; userAgent.indexOf(“MSIE”) &gt; -1 &amp;&amp; !isOpera; //判断是否IE浏览器<br>    var isEdge = userAgent.indexOf(“Edge”) &gt; -1; //判断是否IE的Edge浏览器<br>    var isFF = userAgent.indexOf(“Firefox”) &gt; -1; //判断是否Firefox浏览器<br>    var isSafari = userAgent.indexOf(“Safari”) &gt; -1 &amp;&amp; userAgent.indexOf(‘Chrome’) == -1 //判断是否Safari浏览器<br>    var isChrome = userAgent.indexOf(“CriOS”) &gt; -1 &amp;&amp; userAgent.indexOf(‘Safari’) &gt; -1 //判断Chrome浏览器<br>    if (isIE) {<br>      var reIE = new RegExp(“MSIE (\d+\.\d+);”);<br>      reIE.test(userAgent);<br>      var fIEVersion = parseFloat(RegExp[“$1”]);<br>      if (fIEVersion == 7)<br>        return “IE7”<br>      else if (fIEVersion == 8)<br>        return “IE8”;<br>      else if (fIEVersion == 9)<br>        return “IE9”;<br>      else if (fIEVersion == 10)<br>        return “IE10”;<br>      else if (fIEVersion == 11)<br>        return “IE11”;<br>      else<br>        return “IE7以下” //IE版本过低<br>      }</p>
 <pre><code>if (isFF)
   return &quot;FF&quot;;
 if (isOpera)
